@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cómo rellenar y entregar la ficha de uso de la IA · GT IA en la práctica docente</title>
+<meta name="description" content="Guía para rellenar y entregar la ficha de uso de la IA del Grupo de Trabajo «IA en la práctica docente», CEIP San Fernando, curso 2026/2027.">
+<style>
+  :root{--verde:#007A33;--verde-osc:#005A26;--claro:#F2F7F3;--borde:#DDE5DF;--texto:#1F2A24;--gris:#4A5A50;--aviso:#FFF7D6;--aviso-borde:#E8D27A;}
+  *{box-sizing:border-box;}
+  body{margin:0;font-family:Roboto,"Segoe UI",Arial,sans-serif;font-size:17px;line-height:1.6;color:var(--texto);background:#FFFFFF;}
+  header{background:var(--verde);color:#FFFFFF;padding:36px 20px 30px;}
+  header .in,main,footer .in{max-width:860px;margin:0 auto;}
+  header p.eti{margin:0 0 6px;font-size:14px;font-weight:bold;letter-spacing:.06em;text-transform:uppercase;color:#F2F57A;}
+  header h1{margin:0 0 8px;font-size:clamp(26px,4.5vw,38px);line-height:1.2;}
+  header p.sub{margin:0;color:#D6ECDD;font-size:16px;}
+  main{padding:28px 20px 10px;}
+  h2{color:var(--verde);font-size:24px;margin:40px 0 10px;line-height:1.3;}
+  h3{color:var(--verde-osc);font-size:19px;margin:26px 0 6px;}
+  .intro{font-size:19px;}
+  .aviso{background:var(--aviso);border:1px solid var(--aviso-borde);border-radius:8px;padding:16px 20px;margin:18px 0;}
+  .aviso ol{margin:0;padding-left:22px;}
+  .aviso li{margin:6px 0;}
+  ol.pasos{counter-reset:p;list-style:none;padding:0;margin:12px 0;}
+  ol.pasos li{counter-increment:p;position:relative;padding:4px 0 4px 44px;margin:8px 0;}
+  ol.pasos li::before{content:counter(p);position:absolute;left:0;top:4px;width:30px;height:30px;border-radius:50%;background:var(--verde);color:#FFFFFF;font-weight:bold;font-size:15px;display:flex;align-items:center;justify-content:center;}
+  .nota{color:var(--gris);font-style:italic;}
+  .tabla{overflow-x:auto;margin:14px 0;}
+  table{width:100%;border-collapse:collapse;font-size:16px;min-width:560px;}
+  th{background:var(--verde);color:#FFFFFF;text-align:left;padding:10px 12px;}
+  td{padding:10px 12px;border-bottom:1px solid var(--borde);vertical-align:top;}
+  tr:nth-child(even) td{background:var(--claro);}
+  td:first-child{font-weight:bold;white-space:nowrap;}
+  .destaca{background:var(--claro);border-left:5px solid var(--verde);padding:12px 18px;border-radius:4px;margin:16px 0;}
+  ul.dua li{margin:8px 0;}
+  .prompt{position:relative;background:var(--claro);border:1px solid var(--borde);border-radius:8px;padding:18px 20px 16px;margin:14px 0;font-style:italic;}
+  .prompt button{position:absolute;top:10px;right:10px;font:inherit;font-style:normal;font-size:14px;font-weight:bold;background:var(--verde);color:#FFFFFF;border:none;border-radius:6px;padding:6px 12px;cursor:pointer;}
+  .prompt button:focus-visible{outline:3px solid #F2F57A;outline-offset:2px;}
+  .prompt p{margin:28px 0 0;}
+  kbd,.ui{font-weight:bold;}
+  .final{font-weight:bold;font-size:18px;border-top:2px solid var(--verde);padding-top:14px;margin-top:30px;}
+  .acciones{margin:26px 0 0;display:flex;gap:12px;flex-wrap:wrap;}
+  .acciones a{display:inline-block;background:var(--verde);color:#FFFFFF;text-decoration:none;font-weight:bold;padding:10px 18px;border-radius:6px;font-size:15px;}
+  .acciones a.sec{background:#FFFFFF;color:var(--verde);border:2px solid var(--verde);}
+  a{color:var(--verde);}
+  footer{margin-top:44px;border-top:1px solid var(--borde);padding:18px 20px 30px;font-size:13px;color:var(--gris);}
+  @media print{
+    header{background:#FFFFFF;color:var(--texto);padding:0 0 10px;border-bottom:3px solid var(--verde);}
+    header p.eti,header p.sub{color:var(--gris);}
+    .acciones,.prompt button{display:none;}
+    h2{break-after:avoid;} table,.aviso,.prompt{break-inside:avoid;}
+    body{font-size:12pt;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="in">
+    <p class="eti">Grupo de Trabajo «IA en la práctica docente»</p>
+    <h1>Cómo rellenar y entregar la ficha de uso de la IA</h1>
+    <p class="sub">CEIP San Fernando · Curso 2026/2027</p>
+  </div>
+</header>
+
+<main>
+
+<p class="intro">La ficha sirve para contar al resto del grupo algo que has hecho con la IA, de forma que cualquiera pueda repetirlo en su clase. No es un examen y nadie va a buscar faltas. Con frases cortas basta. Se tarda unos diez o quince minutos.</p>
+
+<h2>Antes de empezar: dos normas que no se negocian</h2>
+<div class="aviso">
+  <ol>
+    <li><strong>Usa solo herramientas de IA autorizadas por la Consejería.</strong> En el grupo trabajamos con Gemini y NotebookLM. Si quieres usar otra, pregunta antes.</li>
+    <li><strong>No metas nunca en la IA nada del alumnado:</strong> ni nombres, ni fotos, ni voz, ni trabajos, ni datos que permitan saber de quién se habla. Si necesitas un ejemplo, invéntalo.</li>
+  </ol>
+</div>
+
+<h2>Paso 1. Abrir tu ficha en Classroom</h2>
+<p>No tienes que hacer ninguna copia ni descargar nada. Tu ficha ya está creada y lleva tu nombre.</p>
+<ol class="pasos">
+  <li>Entra en la clase del grupo en Classroom.</li>
+  <li>Arriba, pulsa la pestaña <span class="ui">Trabajo de clase</span>.</li>
+  <li>Pulsa la tarea de la ficha que toque (por ejemplo, «Ficha 1 · Primer trimestre») y luego <span class="ui">Ver tarea</span>.</li>
+  <li>A la derecha verás un recuadro llamado <span class="ui">Tu trabajo</span>. Dentro hay un documento que empieza por tu nombre. Ábrelo.</li>
+</ol>
+<p class="nota">Todo lo que escribas se guarda solo. Puedes cerrar el documento y seguir otro día.</p>
+
+<h2>Paso 2. Rellenar la ficha, apartado por apartado</h2>
+<p>Donde la ficha te ofrece varias opciones escritas, <strong>borra las que no correspondan</strong> y deja la tuya.</p>
+
+<h3>Datos</h3>
+<p>Tu nombre, el nombre de la actividad, la etapa y el nivel. Nada más.</p>
+
+<h3>Uso de la IA que he hecho</h3>
+<p>Aquí te preguntan cómo trabajaste con la IA. Hay tres formas posibles y solo tienes que dejar una.</p>
+<div class="tabla">
+<table>
+  <tr><th>Opción de la ficha</th><th>En cristiano</th><th>Ejemplo</th></tr>
+  <tr><td>Automatización</td><td>Le encargaste algo cerrado, te lo dio y lo revisaste. Una o dos peticiones.</td><td>«Hazme diez operaciones de sumas llevando para 2.º».</td></tr>
+  <tr><td>Aumentación</td><td>Fuiste hablando con ella: pedías, mirabas, corregías y volvías a pedir.</td><td>Preparar una ficha de lectura cambiando el texto tres o cuatro veces hasta que te gustó.</td></tr>
+  <tr><td>Agentividad</td><td>Usaste un asistente que ya tenías preparado, como una gema de Gemini o un cuaderno de NotebookLM.</td><td>Un cuaderno con tu programación al que le pides actividades.</td></tr>
+</table>
+</div>
+<div class="destaca">Si dudas entre las dos primeras, pregúntate si hubo idas y vueltas. Si las hubo, es aumentación.</div>
+
+<h3>Las 4 D en esta actividad</h3>
+<p>Son cuatro preguntas sobre lo que hiciste. Los nombres suenan a manual, pero lo que preguntan es sencillo.</p>
+<div class="tabla">
+<table>
+  <tr><th>Apartado</th><th>Lo que te pregunta en realidad</th><th>Una frase de ejemplo basta</th></tr>
+  <tr><td>Delegación</td><td>¿Qué hiciste tú, qué hizo la IA y qué no quisiste dejarle?</td><td>«Yo elegí el tema y el nivel; la IA redactó el texto; las preguntas las hice yo».</td></tr>
+  <tr><td>Descripción</td><td>¿Cómo se lo pediste?</td><td>«Le dije el curso, lo que quería, que fuera en una página y con letra grande».</td></tr>
+  <tr><td>Discernimiento</td><td>¿Cómo comprobaste que estaba bien y era adecuado para tu clase?</td><td>«Cambié dos palabras difíciles y quité una pregunta que no venía a cuento».</td></tr>
+  <tr><td>Diligencia</td><td>¿Qué revisaste y cómo cuidaste los datos?</td><td>«No puse datos del alumnado y comprobé el contenido con el libro».</td></tr>
+</table>
+</div>
+<p>Si en alguna parte decidiste no usar la IA, escríbelo. Es una respuesta igual de válida que cualquier otra.</p>
+
+<h3>Descripción de la actividad</h3>
+<p>Aquí cuentas qué es la actividad, en dos o tres frases, como se lo contarías a un compañero en el pasillo. Después completa las frases que ya vienen escritas: en qué momento la usaste, cuántas sesiones dura, qué herramienta usaste, si partiste de cero o de un documento previo y que no hay datos del alumnado.</p>
+
+<h3>Relación con el DUA</h3>
+<p>El DUA (Diseño Universal para el Aprendizaje) consiste en preparar la actividad desde el principio para que le sirva a toda la clase, sin tener que hacer luego una versión aparte para nadie. La ficha te pide tres cosas:</p>
+<ul class="dua">
+  <li><strong>Implicación:</strong> cómo consigues que el alumnado tenga ganas de participar. Por ejemplo, con temas cercanos, eligiendo o jugando.</li>
+  <li><strong>Representación:</strong> de cuántas formas llega la información. Por ejemplo, con texto, dibujos, audio u objetos que se pueden tocar.</li>
+  <li><strong>Acción y expresión:</strong> de cuántas formas pueden demostrar lo aprendido. Por ejemplo, escribiendo, dibujando, explicándolo en voz alta u ordenando tarjetas.</li>
+</ul>
+<p>Si este apartado se te atraganta, pídele ayuda a la IA. Copia esto en Gemini, cambia lo que va entre corchetes y pega tu actividad:</p>
+<div class="prompt">
+  <button type="button" id="copiar" aria-label="Copiar el texto para Gemini">Copiar</button>
+  <p id="texto-prompt">Esta es una actividad que he preparado para [curso y área]: [pega aquí la actividad]. ¿La podría usar todo el alumnado de una clase tal como está? Si no, propón una o dos formas más de presentar la información, de participar o de demostrar lo aprendido, sin rebajar el objetivo. Piensa en dificultades generales, por ejemplo leer textos largos, no en alumnos concretos.</p>
+</div>
+<p>Lee lo que te proponga, quédate con lo que te sirva y escríbelo con tus palabras.</p>
+<p>Al final del apartado hay una comprobación: que la actividad sigue pidiendo lo mismo a todo el alumnado y que no es infantil para su edad. Si es así, deja el «sí».</p>
+
+<h3>Autoría</h3>
+<p>Escribe tu nombre. La licencia que aceptas, <strong>CC BY-NC-SA 4.0</strong>, significa algo sencillo: otros docentes pueden usar y adaptar tu ficha citándote, nadie puede venderla y lo que hagan a partir de ella tiene que compartirse igual.</p>
+
+<h2>Paso 3. Entregar</h2>
+<ol class="pasos">
+  <li>Si quieres adjuntar el material que hiciste (la ficha para el alumnado, el PDF, el enlace…), en la tarea pulsa <span class="ui">+ Añadir o crear</span> y elige <span class="ui">Archivo</span> o <span class="ui">Enlace</span>.</li>
+  <li>Pulsa el botón azul <span class="ui">Entregar</span>. Está arriba a la derecha dentro del propio documento, o en el recuadro <span class="ui">Tu trabajo</span> de Classroom.</li>
+</ol>
+<p><strong>Ya está.</strong></p>
+
+<h2>Si te atascas</h2>
+<div class="tabla">
+<table>
+  <tr><th>Problema</th><th>Solución</th></tr>
+  <tr><td>He entregado y quiero cambiar algo.</td><td>En <span class="ui">Tu trabajo</span>, pulsa <span class="ui">Anular entrega</span>, corrige y vuelve a entregar.</td></tr>
+  <tr><td>No encuentro mi documento.</td><td>Mira el recuadro <span class="ui">Tu trabajo</span> dentro de la tarea, no en el tablón.</td></tr>
+  <tr><td>Desde el móvil me pierdo.</td><td>En la app, toca la tarea y desliza hacia arriba el panel <span class="ui">Tu trabajo</span>. Desde el ordenador es más cómodo.</td></tr>
+  <tr><td>No sé qué poner en un apartado.</td><td>Escribe lo que puedas y pregunta en el foro de Classroom. Una ficha a medias se arregla; una que no se entrega, no.</td></tr>
+</table>
+</div>
+
+<p class="final">Si rellenar la ficha te lleva más de un cuarto de hora, avisa al coordinador: el fallo es de la ficha, no tuyo.</p>
+
+<div class="acciones">
+  <a href="Guia_rellenar_ficha_uso_IA_GT.pdf" download>Descargar en PDF</a>
+  <a class="sec" href="https://flujosiadocencia.blogspot.com/">Volver al blog del grupo</a>
+</div>
+
+</main>
+
+<footer>
+  <div class="in">
+    Cómo rellenar y entregar la ficha de uso de la IA · Grupo de Trabajo "IA en la práctica docente", CEIP San Fernando, curso 2026/2027 · <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">CC BY-NC-SA 4.0</a>. Basado en el marco AI Fluency de R. Dakan y J. Feller (con Anthropic), CC BY-NC-SA 4.0. Elaborado con apoyo de IA generativa; contenido revisado por el profesorado autor.
+  </div>
+</footer>
+
+<script>
+  (function(){
+    var b=document.getElementById('copiar');
+    b.addEventListener('click',function(){
+      var t=document.getElementById('texto-prompt').textContent;
+      function ok(){b.textContent='¡Copiado!';setTimeout(function(){b.textContent='Copiar';},2000);}
+      if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(ok,function(){fallback(t);});}
+      else{fallback(t);}
+      function fallback(x){var a=document.createElement('textarea');a.value=x;document.body.appendChild(a);a.select();try{document.execCommand('copy');ok();}catch(e){}document.body.removeChild(a);}
+    });
+  })();
+</script>
+</body>
+</html>
